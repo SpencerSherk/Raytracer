@@ -1,7 +1,7 @@
 Ray Tracing: Triangle Meshes and AABB Trees
 ===========================================
 
-Raytracer works for SDF primitives, and triangle meshes (.OFF and .OBJ). 
+This raytracer works for SDF primitives, and triangle meshes (.OFF and .OBJ). 
 
-Uses AABB acceleration structures to make the computation faster.
-To construct the AABB tree, I used a bottom up approach- merging the nodes in the bottom level first, and then working my way up to the root node of the tree.
+It uses an AABB acceleration structure for a 500X speedup in computation/render time.
+This acceleration structure uses a bottom up approach, merging nodes in the bottom level first, and then working up to the root node of the tree.
